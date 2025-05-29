@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Autoplay Loop Audio</title>
+</head>
+<body>
+    <audio id="audio" autoplay loop>
+     <source src="audios/gemi222-gp.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio2" autoplay loop>
+      <source src="audios/risa-de-momo.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio3" autoplay loop>
+      <source src="audios/tobi1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio4" autoplay loop>
+      <source src="audios/tobi2.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="audio5" autoplay loop>
+      <source src="audios/tobi3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id ="audio6" autoplay loop>
+<source src="audios/un-oso-wacho-ultra-sat.mp3" type="audio/mpeg">
+    </audio>
+
+  <script>
+    const audio = document.getElementById("audio"); audio.volume = 1.0 ;document.addEventListener("click", () => { 
+      audio.play();
+      audio2.play(); 
+      audio6.play();
+      audio3.play();
+      audio4.play();
+      audio5.play();
+    });
+  </script>
+</body>
+</html>
